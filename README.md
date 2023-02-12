@@ -1,4 +1,4 @@
-# Languages-and-Automatas
+# Languages and Automatas
 
 This is a repository focused to the automata and languages applying regex on Java, if I have time, maybe I compile to another language like Go or Python
 
