@@ -1,5 +1,0 @@
-package views
-
-fun App(){
-
-}
