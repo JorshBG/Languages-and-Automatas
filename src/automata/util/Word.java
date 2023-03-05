@@ -16,6 +16,7 @@ public class Word {
         builder.append(word);
         builder.append(" is ");
         builder.append(validate?"Accepted":"Refused");
+        builder.append("\n");
         return builder.toString();
     }
 

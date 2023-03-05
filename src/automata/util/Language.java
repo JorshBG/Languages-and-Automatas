@@ -31,8 +31,8 @@ public class Language {
         if (currentWord.length() == size) {
             this.language.add(currentWord);
         } else {
-            for (int i = 0; i < alphabet.size(); i++) {
-                build(currentWord + alphabet.get(i));
+            for (String s : alphabet) {
+                build(currentWord + s);
             }
         }
     }
@@ -52,7 +52,7 @@ public class Language {
             if (sizeExact) build("");
             else build();
             if (includeVoid) {
-                this.language.add(0, " ");
+                this.language.add(0, "");
             }
             return this.language;
         }
