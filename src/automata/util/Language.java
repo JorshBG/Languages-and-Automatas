@@ -4,23 +4,23 @@ import java.util.ArrayList;
 import java.util.Arrays;
 
 public class Language {
-    private ArrayList<String> alphabet;
+    private ArrayList<Character> alphabet;
     private int size;
     private boolean sizeExact;
     private ArrayList<String> language;
     public Language() {
-        this(new String[]{"0", "1"});
+        this(new Character[]{'0', '1'});
     }
 
-    public Language(String[] alphabet) {
+    public Language(Character[] alphabet) {
         this(alphabet, alphabet.length, false);
     }
 
-    public Language(String[] alphabet, boolean sizeExact) {
+    public Language(Character[] alphabet, boolean sizeExact) {
         this(alphabet, alphabet.length, sizeExact);
     }
 
-    public Language(String[] alphabet, int size, boolean sizeExact) {
+    public Language(Character[] alphabet, int size, boolean sizeExact) {
         this.alphabet = new ArrayList<>(Arrays.asList(alphabet));
         this.size = size;
         this.sizeExact = sizeExact;
@@ -31,7 +31,7 @@ public class Language {
         if (currentWord.length() == size) {
             this.language.add(currentWord);
         } else {
-            for (String s : alphabet) {
+            for (char s : alphabet) {
                 build(currentWord + s);
             }
         }

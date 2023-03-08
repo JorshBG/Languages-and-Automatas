@@ -7,7 +7,7 @@ public class Main {
     public static void main(String[] args) {
         AFD obj1 = new AFD(
                 new int[]{0,1,2,3,4},
-                new char[]{'a','b'},
+                new Character[]{'a','b'},
                 0,
                 new int[]{0,3,4},
                 new int[][]{
@@ -18,7 +18,7 @@ public class Main {
                         {1,2}
                 }
         );
-        Language obj2 = new Language(new String[]{"a","b"}, 5, false);
+        Language obj2 = new Language(new Character[]{'a','b'}, 5, false);
 
         var language = obj2.getLanguage(false);
         System.out.println(language.size());

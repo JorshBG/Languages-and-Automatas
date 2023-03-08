@@ -7,7 +7,8 @@ public class Main {
         Runnable play = new Runnable() {
             @Override
             public void run() {
-                new App();
+                var obj = new AFD();
+                obj.setLocationRelativeTo(null);
             }
         };
         play.run();

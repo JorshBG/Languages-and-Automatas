@@ -3,12 +3,12 @@ package automata.dev;
 public class AFD {
 
     private int[] states;
-    private char[] alphabet;
+    private Character[] alphabet;
     private int init;
     private int[] deaths;
     private int[][] transitionTable;
 
-    public AFD(int[] states, char[] alphabet, int init, int[] deaths, int[][] transitionTable) {
+    public AFD(int[] states, Character[] alphabet, int init, int[] deaths, int[][] transitionTable) {
         this.states = states;
         this.alphabet = alphabet;
         this.init = init;
